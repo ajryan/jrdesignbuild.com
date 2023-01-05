@@ -1,0 +1,52 @@
+﻿body
+{ 
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 99%;
+	background-image: url('images/bg.png');
+	background-repeat: repeat;
+}
+
+h2
+{
+	font-size: large;
+	font-family: Tahoma, Verdana, Arial;
+}
+
+img
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#header
+{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	border: thin solid #909090;
+	background-color: #fff;
+	text-align: center;
+}
+
+#content
+{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: thin solid #909090;
+	background-color: #fff;
+	text-align: center;
+}
+
+#footer
+{
+	margin: 10px;
+}

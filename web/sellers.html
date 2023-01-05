@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Maria Perez</title> 
+	<link rel="stylesheet" href="stylesheet1.css">
+	<style type="text/css">@import url("stylesheet2.css");body,td,th {
+	color: #26354a;
+}
+body {
+	background-color: #d3dce6;
+}
+</style>
+<script language="JavaScript" type="Text/Javascript"><!-- // Hide script from older browsers
+function CreateBookmarkLink() 
+{
+	title = "Maria Perez, Long and Foster"; 
+	url = "http://mpsellshouses.com";
+	if (window.sidebar) { // Mozilla Firefox Bookmark
+		window.sidebar.addPanel(title, url,"");
+	} else if( window.external ) { // IE Favorite
+		window.external.AddFavorite( url, title); }
+	else if(window.opera && window.print) { // Opera Hotlist
+		return true; }
+}
+function SubmitForm(frm)
+	{
+			var rdPropertyTypeSelectedIndex = -1;
+			for (i=0;i<document.frmTopMarketerWidget.rdPropertyType.length; i++)
+			 {
+					if (document.frmTopMarketerWidget.rdPropertyType[i].checked)
+					 {
+					rdPropertyTypeSelectedIndex = document.frmTopMarketerWidget.rdPropertyType[i].value;
+					break;
+					 }
+			 }
+		document.frmTopMarketerWidget.hidPropertyType.value = rdPropertyTypeSelectedIndex;
+
+		if (frm.Address.value == "" || frm.Address.value==' - Street Address - ')
+		{
+			alert('Please enter Street Address');
+			if (frm.Address.value == "" )
+			{
+				  frm.Address.value="";
+			}
+			frm.Address.focus();
+			return false;
+		}
+
+		if ((validateUSZip(frm.ZipCode.value) == false) || (frm.ZipCode.value == ' - Zip Code - '))
+		{
+			alert('Please enter a valid Zip Code');
+			frm.ZipCode.focus();
+			return false;
+		}
+		return true;
+	}
+// --></script>
+</head>
+<body>
+<div id="container">
+	<div id="header" title="Maria Perez">
+		<h1>Maria Perez</h1>
+	</div> 
+	<div id="mainnav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="buyers.asp">For Buyers</a></li>
+			<li>For Sellers</li>
+		</ul>
+	</div> 
+	<div id="menu">
+		<br>
+		<div id="menunav">
+			<p><img src="landf.png" alt="Long and Foster" width="63" height="49" class="imagefloat" longdesc="http://longandfoster.com">Frederick Monocacy Office<br>
+		    1700 Kingfisher Drive, Suite 6<br>Frederick, MD 21701</p>
+			<p><a href="http://mariaperez.lnfre.com">Portfolio ></a><br>
+			Homes and property for sale
+		    </p>
+		</div>
+		<img src="fence.jpg" alt="Fence" width="228" height="303" vspace="15" longdesc="http://mpsellshouses.com"><br>
+		&nbsp;&nbsp;<img src="realtor.png" alt="realtor" width="20" height="20" longdesc="http://realtor.org">&nbsp;&nbsp;<img src="equalhousing.png" alt="equal housing oppoprtunity" width="18" height="20" longdesc="http://www.hud.gov"></div>
+	<div id="contents">
+	  <div>
+			<h2>Resources for Sellers </h2>
+		  	<ul>
+				<li><a href="#contact">Request Information</a></li>
+				<li><a href="#compare">What is your home worth?</a></li>
+			</ul>
+			<a name="contact"><h3>Contact Maria</h3></a>
+			<p><span class="frmLabel">
+			Please use the form below to send a request for information.  Enter either your phone number or email address (whichever is your preferred contact method), and a short message describing your needs.
+			<form onSubmit="return validateRequest(this)" method="post" action="requestemail.asp">
+			<table border="0" cellpadding="2" cellspacing="0" summary="feedback form" width="75%">
+			<tr><td>Name:</td><td> <input name="fName" type="text" id="fName" value="Name"></td></tr> 
+			<tr><td>Email Address:</td><td> <input name="fEmail" type="text" id="fEmail" value="EMail"></td></tr>
+			<tr><td>Phone Number:</td><td><input name="fPhone" type="text" id="fPhone" value="Phone"></td></tr>
+			<tr><td colspan="2">How can I help you?<br> 
+			<textarea name="fRequest" cols="50" rows="10"></textarea><br>
+			<input type="submit" name="Submit" value="Send Request"></td></tr>
+			</table>
+			</form>
+			</span></p>
+			<a name="compare"><h3>What is your home worth?</h3></a>
+			
+			<span class="frmLabel"><form name="frmTopMarketerWidget" action="http://www.realtor.com/FCMA/TMCheck.asp?poe%3Drealtor" method="post" onSubmit="return SubmitForm(this);" ID="Form3">
+				<input type="hidden" name="frmAction" value="SearchHistoricalSales" ID="Hidden11">
+				<input type="hidden" name="hidPropertyType" id="hidPropertyType" value="">
+					<TABLE cellSpacing="0" cellPadding="2" width="75%" border=0>
+						<TR>
+							<TD>Street Address:</TD>
+							<TD><input class="hpFld" id="txtAddress" name="Address" value="" style="WIDTH: 200px"></TD>
+						</TR>
+						<TR>
+							<TD>Zip Code:</TD>
+							<TD><input class="hpFld" id="txtZip" name="ZipCode" value="" style="WIDTH: 130px"></TD>
+						</TR>
+						<TR>
+							<td colSpan=2>
+							<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><tr>
+								<TD><label for="rdRSF" class="hpFld"><INPUT class=formText type=radio CHECKED size=5 value=1 name=rdPropertyType id=rdRSF>Residential Single Family</label> </TD>
+								<TD><label for="rdCT" class="hpFld"><INPUT class=formText type=radio size=5 value=2 name=rdPropertyType id=rdCT>Condo/Townhouse</label> </TD>
+								<TD><input type="submit" NAME="Image1" alt="find home values" title="find home values" onClick="return SubmitForm(this);" value="Go"></TD>
+							</tr></table>
+							</td>
+					     </TR>
+				      </TABLE>
+		        </form></span><p>&nbsp;</p>
+	    </div>
+	</div>
+	<div id="footer">
+		Copyright &copy; mpsellshouses.com 2006/2007	</div>
+</div>
+</body>
+</html>

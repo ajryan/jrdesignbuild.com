@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Maria Perez</title> 
+	<link rel="stylesheet" href="stylesheet1.css">
+	<style type="text/css">
+		@import url("stylesheet2.css");
+	</style>
+	<script language="JavaScript" type="Text/Javascript">
+	function CreateBookmarkLink() 
+	{
+			title = "Maria Perez, Long and Foster"; 
+			url = "http://mpsellshouses.com";
+		if (window.sidebar) { // Mozilla Firefox Bookmark
+			window.sidebar.addPanel(title, url,"");
+		} else if( window.external ) { // IE Favorite
+			window.external.AddFavorite( url, title); }
+		else if(window.opera && window.print) { // Opera Hotlist
+			return true; }
+	}
+	function validateRequest(frm)
+	{
+		var retVal = true;
+		if ( (frm.fReferFromName.value == 'From') || (frm.fReferFromName.value == '') )
+		{
+			alert('Please enter your name.');
+			frm.fReferFromName.focus();
+			return false;
+		}
+		if ( (frm.fReferToName.value == 'To (Name)') || (frm.fReferToName.value == '') )
+		{
+			alert('Please enter a name.');
+			frm.fReferToName.focus();
+			return false;
+		}
+		if ( (frm.fReferToEmail.value == 'To (EMail)') || (frm.fReferToEmail.value == '') )
+		{
+			alert('Please enter an email address.');
+			frm.fReferToEmail.focus();
+			return false;
+		}
+		
+		str = frm.fReferToEmail.value;
+		var at="@";
+		var dot=".";
+		var lat=str.indexOf(at);
+		var lstr=str.length;
+		var ldot=str.indexOf(dot);
+		if (str.indexOf(at)==-1){
+		   retVal = false;
+		}
+
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+		   retVal = false;
+		}
+
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+		    retVal = false;
+		}
+
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    retVal = false;
+		 }
+
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    retVal = false;
+		 }
+
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    retVal = false;
+		 }
+		
+		 if (str.indexOf(" ")!=-1){
+		    retVal = false;
+		 }
+		
+		if (retVal == false)
+		{
+			alert('Please enter a valid email address.');
+		}
+		
+		return retVal;
+	}
+	</script>
+</head>
+<body>
+<div id="container">
+	<div id="header" title="Maria Perez">
+		<h1>Maria Perez</h1>
+	</div> 
+	<div id="mainnav">
+		<ul>
+			<li>Home</li>
+			<li><a href="buyers.asp">For Buyers</a></li>
+			<li><a href="sellers.html">For Sellers</a></li>
+		</ul>
+	</div> 
+	<div id="menu">
+		<br>
+		<div id="menunav">
+			<p><img src="landf.png" alt="Long and Foster" width="63" height="49" class="imagefloat" longdesc="http://longandfoster.com">Frederick Monocacy Office<br>
+		    1700 Kingfisher Drive, Suite 6<br>Frederick, MD 21701</p>
+			<p><a href="http://mariaperez.lnf.com">Portfolio ></a><br>
+			Homes and property for sale
+		    </p>
+		</div>
+		<img src="fence.jpg" alt="Fence" width="228" height="303" vspace="15" longdesc="http://mpsellshouses.com"><br>
+		&nbsp;&nbsp;<img src="realtor.png" alt="realtor" width="20" height="20" longdesc="http://realtor.org">&nbsp;&nbsp;<img src="equalhousing.png" alt="equal housing oppoprtunity" width="18" height="20" longdesc="http://www.hud.gov"></div>
+	<div id="contents">
+	  <div>
+			<h2>Welcome</h2>
+		  	<p><img class="imagefloat" src="mp.jpg" alt="" width="110" height="97" border="0">I have  many years of experience  related to new homes. I am a horse enthusiast, showing and trail  riding my Tennessee Walkers. My years in accounting and in marketing give  me an edge to market your home. I would be proud to represent you in the sale or purchase of a property.</p>
+			<table border=0">
+				<tr>
+                    <td>
+                    	<iframe name="ePropFrame" src="http://www.epropertysites.com/fprop.htm?id=1251474374&p=a&s=s&l=v&kc=FFFFFF&bc=CCCCCC&fc=4F493B&t=Featured^Properties" width="155" 							                                height="225" frameborder=0 marginwidth=0 marginheight=0 scrolling=no vspace=0 hspace=0></iframe>
+                    </td>
+                    <td>
+                    	<script type="text/javascript" src="http://cdn.widgetserver.com/syndication/subscriber/InsertWidget.js"></script><script>if (WIDGETBOX) WIDGETBOX.renderWidget('32e4c783-6a3d-4465-8f81-96a469d82c62');</script><noscript>Get the <a href="http://www.widgetbox.com/widget/recipe-of-the-day">Recipe Of The Day</a> widget and many other <a href="http://www.widgetbox.com/">great free widgets</a> at <a href="http://www.widgetbox.com">Widgetbox</a>! Not seeing a widget? (<a href="http://docs.widgetbox.com/using-widgets/installing-widgets/why-cant-i-see-my-widget/">More info</a>)</noscript>
+                    </td>  
+                    <td>
+	                    <script type="text/javascript" src="http://cdn.widgetserver.com/syndication/subscriber/InsertWidget.js"></script><script>if  (WIDGETBOX) WIDGETBOX.renderWidget('7ca7f86e-10bd-49d2-8609-6f8f1b762054');</script><noscript>Get the <a href="http://www.widgetbox.com/widget/todays--us-frontpages">New  US Frontpages</a>  widget and many other <a href="http://www.widgetbox.com/">great  free widgets</a> at <a href="http://www.widgetbox.com">Widgetbox</a>! Not seeing a widget? (<a href="http://docs.widgetbox.com/using-widgets/installing-widgets/why-cant-i-see-my-widget/">More  info</a>)</noscript>
+                    </td>               
+                </tr>            
+            </table>
+
+		  	<p>Please <a href="http://mariaperez.lnf.com">view my listings</a> at Long and Foster.</p>
+		  	<p>Email: <a href="mailto:maria.perez@longandfoster.com">maria.perez@longandfoster.com</a><br>Phone: 866-478-1605</p>
+		  	<p>This site offers many tools for home <a href="buyers.asp">buyers</a> and <a href="sellers.html">sellers</a>. To bookmark this page, click <a href = "javascript:CreateBookmarkLink()">here</a>. </p>
+		  	<hr>
+		  	<p><span class="frmLabel">
+				<form onSubmit="return validateRequest(this)" method="post" action="referemail.asp">
+				<table border="0" cellpadding="2" cellspacing="0" summary="feedback form" width="75%">
+				<tr><td colspan="2">Did Maria help you buy or sell your home?  Want to let someone know?  Use the form below.</td></tr>
+				<tr><td>My Name:</td><td> <input name="fReferFromName" type="text" id="fName" value="From"></td></tr> 
+				<tr><td>Friend's Name:</td><td> <input name="fReferToName" type="text" id="fName" value="To (Name)"></td></tr> 
+				<tr><td>Friend's Email:</td><td> <input name="fReferToEmail" type="text" id="fEmail" value="To (EMail)"></td></tr>
+				<tr><td>&nbsp;</td><td><input type="submit" name="Submit" value="Send Referral"></td></tr>
+				</table>
+				</form>
+		   	</span></p>		
+	  </div>
+	</div>
+	<div id="footer">Copyright &copy; mpsellshouses.com 2006/2007</div>
+</div>
+</body>
+</html>
